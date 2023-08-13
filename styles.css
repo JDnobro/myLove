@@ -1,0 +1,133 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Baloo';
+	src: url('Baloo-Regular.ttf');
+}
+
+body {
+	font-family: 'Baloo';
+	max-width: 1280px;
+	margin: 0 auto;
+	background-color: rgba(243, 212, 221, 0.3);
+}
+
+.hero-section {
+	padding: 20px;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 70px;
+	background: rgb(44, 211, 55);
+	background: linear-gradient(
+		180deg,
+		rgba(44, 211, 55, 1) 0%,
+		rgba(75, 209, 162, 1) 30%,
+		rgba(86, 209, 174, 1) 46%,
+		rgba(98, 215, 187, 1) 58%,
+		rgba(177, 215, 189, 1) 71%,
+		rgba(234, 219, 172, 1) 84%,
+		rgba(243, 212, 221, 1) 100%
+	);
+}
+.hero-content {
+	z-index: 1;
+}
+
+h4 {
+}
+
+.hero-section img {
+	max-width: 1280px;
+	position: absolute;
+}
+
+.hero-1 {
+	font-size: 90px;
+	font-weight: bold;
+}
+.hero-2,
+.hero-3 {
+	font-size: 15px;
+	padding-left: 10px;
+}
+
+.question-box {
+	display: flex;
+	justify-content: center;
+	gap: 200px;
+}
+
+.question-box img {
+	border-radius: 20px;
+}
+
+.question-box:first-child .question {
+	width: 386px;
+}
+
+.question {
+	align-self: center;
+}
+
+.all-box {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.last-question-box {
+	margin-top: 40px;
+	position: relative;
+}
+
+.last-img1,
+.last-img2 {
+	position: absolute;
+	width: 100px;
+	border-radius: 20px;
+}
+
+.last-img1 {
+	top: 40px;
+	right: 250px;
+	rotate: 30deg;
+	right: -50px;
+}
+
+.last-img2 {
+	bottom: -10px;
+	right: -50px;
+	rotate: -30deg;
+}
+
+.submit-button {
+	margin: 20px 50px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 30px;
+	background-color: black;
+	color: white;
+	transition: 0.3s;
+}
+
+.submit-button:hover {
+	background-color: white;
+	color: black;
+}
+.alert {
+	padding: 0;
+}
+
+.border-correct {
+	border: 2px solid green;
+}
+.border-wrong {
+	border: 2px solid red;
+}
+.hidden {
+	display: none;
+}

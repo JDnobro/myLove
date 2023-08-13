@@ -1,0 +1,197 @@
+@font-face {
+	font-family: 'vietnam regular';
+	src: url('BeVietnamPro-Regular.ttf');
+}
+@font-face {
+	font-family: 'vietnam semibold';
+	src: url('BeVietnamPro-SemiBold.ttf');
+}
+@keyframes bigger {
+	50% {
+		font-size: 35px;
+	}
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+body {
+	font-family: 'vietnam regular';
+	background-color: rgba(247, 141, 167, 0.1);
+}
+h2 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+h3 {
+	font-size: 25px;
+}
+.hero-section {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 50px;
+	height: 100%;
+	color: white;
+	background: rgb(156, 110, 186);
+	background: linear-gradient(
+		180deg,
+		rgba(156, 110, 186, 1) 0%,
+		rgba(192, 127, 162, 1) 37%,
+		rgba(210, 134, 150, 1) 55%,
+		rgba(224, 152, 111, 1) 72%,
+		rgba(232, 165, 81, 1) 92%
+	);
+}
+.hero-content {
+	text-align: center;
+}
+
+.hero-heart,
+.hero-heart1 {
+	position: absolute;
+	width: 100px;
+}
+
+.hero-heart1 {
+	top: 0;
+	right: 0;
+}
+
+.hero-heart {
+	bottom: 15px;
+	left: 700px;
+	rotate: 30deg;
+}
+
+strong {
+	font-size: 30px;
+	animation: bigger 1s linear 2;
+	animation-delay: 7s;
+}
+
+.hero-img-last {
+	border-radius: 30px;
+	width: 40%;
+}
+
+.question-box {
+	padding-top: 80px;
+	display: grid;
+	row-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto;
+	grid-template-areas:
+		'question question question'
+		'answer1 answer2 answer3';
+}
+
+.question-box div,
+.question-box p {
+	justify-self: center;
+}
+
+.question {
+	grid-area: question;
+	font-size: 20px;
+	text-align: center;
+	width: 80%;
+	border-radius: 30px;
+	padding: 20px;
+	color: rgb(255, 255, 255);
+	background: rgb(138, 194, 255);
+	background: linear-gradient(
+		180deg,
+		rgba(138, 194, 255, 1) 0%,
+		rgba(186, 191, 253, 1) 39%,
+		rgba(209, 189, 255, 1) 60%,
+		rgba(255, 187, 255, 1) 96%
+	);
+}
+
+.answer1,
+.answer2,
+.answer3 {
+	cursor: pointer;
+	border-radius: 30px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	color: white;
+	background-color: #180404;
+	transition: all 0.3s ease;
+}
+
+.answer1 {
+	width: 278px;
+	grid-area: answer1;
+}
+.answer2 {
+	width: 278px;
+	grid-area: answer2;
+}
+.answer3 {
+	width: 278px;
+	grid-area: answer3;
+}
+
+.question-box .answer3:hover {
+	background-image: url(img/heart2.1.jpg);
+	background-position: center;
+	color: black;
+}
+
+.answer-modify {
+	position: absolute;
+	top: 200px;
+	left: 640px;
+}
+.funny,
+.funny2 {
+	display: inline-block;
+	position: absolute;
+	top: 50px;
+	color: black;
+}
+
+.sad {
+	margin-top: 20px;
+	font-size: 30px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.last:hover {
+	cursor: pointer;
+	animation: gradient 5s ease infinite;
+}
+.last {
+	padding: 20px;
+	background: linear-gradient(239deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 800% 800%;
+	border-radius: 30px;
+	position: absolute;
+	bottom: -120px;
+	right: 20px;
+}
+
+.hidden {
+	display: none;
+}
